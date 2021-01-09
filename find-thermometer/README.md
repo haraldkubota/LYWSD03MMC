@@ -11,7 +11,7 @@ Mijia Thermometer+Hygrometer from https://github.com/atc1441/ATC_MiThermometer
 ❯ node find-thermometer.js
 Sat Jan 09 2021 12:27:49 GMT+0900 (Japan Standard Time) ATC_C1CADA T=24.4, H=35% Batt=100%
 ```
-The program terminates after 60s
+The program terminates after 60s by default.
 
 ### Options
 
@@ -29,7 +29,7 @@ Options:
 
 ### Notes
 
-Sometimes the device name is not defined (shows as "undefined" instead of "ATC_C1CADA" in above example), but if duplicates are not allowed, it'll not show up again with its correct name. Using "--allow-duplicates" will usually show the correct device name at the 2nd message and any subsequent received message.
+Sometimes the device name is not recorded (shows as "undefined" instead of "ATC_C1CADA" in above example), but if duplicates are not allowed, it'll not show up again with its correct name. Using "--allow-duplicates" will usually show the correct device name at the 2nd message and any subsequent received message.
 
 node needs to have permission to to raw connecta to the network, so either use sudo:
 ```

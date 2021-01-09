@@ -1,6 +1,6 @@
 # Read data from reflashed LYWSD03MMC
 
-This short Node.js program read environment data
+This short Node.js program reads environment data
 (temperature, humidity and also battery status)
 via the BLE announcements from the reflashed LYWSD03MMC.
 See https://github.com/atc1441/ATC_MiThermometer
@@ -14,8 +14,8 @@ See https://github.com/atc1441/ATC_MiThermometer
 environment,host=m75q,sensor=ATC_1B96D4 temp=22.5,humidity=37,battery=100
 environment,host=m75q,sensor=ATC_AA74AD temp=22.7,humidity=37,battery=100
 ```
-The program terminates once from all sensors data was received, or latest
-after 10s (default). 4s is more typical. 
+The program terminates once data was received from all sensors, or latest
+after 10s (default), whichever is earlier. Typical run time is below 5s.
 
 ### Options
 
