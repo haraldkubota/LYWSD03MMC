@@ -17,6 +17,15 @@ environment,host=m75q,sensor=ATC_AA74AD temp=22.7,humidity=37,battery=100
 The program terminates once data was received from all sensors, or latest
 after 10s (default), whichever is earlier. Typical run time is below 5s.
 
+The needed snippet for telegraf.conf:
+```
+[[inputs.exec]]
+  commands = ["~/bin/mijia-thermometer.sh"]
+  timeout = "12s"
+  data_format = "influx"
+```
+with the mijia-thermometer.sh script containing the above node command.
+
 ### Options
 
 ```
